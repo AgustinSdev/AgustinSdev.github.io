@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <title>PokeSearch DVL</title>
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <div>
+          <a href="/"
+            ><img src="/img/PokeSearch.png" class="pokemon__logo"
+          /></a>
+        </div>
+        <div id="toggle-menu" class="toggle-menu">
+          <img src="/img/pokelogo.png" alt="menu" />
+        </div>
+        <ul id="main-menu" class="main-menu">
+          <li class="main-menu__item">
+            <a href="/" class="main-menu__link">menu#1</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="/" class="main-menu__link">menu#2</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="/" class="main-menu__link"
+              >menu#3<span class="main-top">important</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <form class="pokemon__search">
+          <input
+            type="text" 
+            name="search" 
+            id="pokemon__input" 
+            placeholder="search" 
+            autocomplete="off"
+          />
+          <button class="pokemon__search--btn">Search</button>
+          <button class="pokemon__return"> <img src="/img/previous.png" alt=""> <a href="/pokeSearch.html"></a> </button>
+    </form>
+    <figure class="box-container">
+    
+      <figure class="box"></figure>
+      <figure class="box2 none">
+    
+      </figure>
+      </figure>
+    </figure>
+    <footer class="footer">
+      <p class="footer__text">Connected with me on social networks!</p>
+      <p class="footer__year">2023 - PokeSearch</p>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="/js/js.js"></script>
+  </body>
+</html>
