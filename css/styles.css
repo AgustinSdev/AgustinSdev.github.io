@@ -149,7 +149,7 @@ p,
 button,
 input {
   font-family: "Press Start 2P", cursive;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 .pokemon__search {
   display: flex;
@@ -163,7 +163,12 @@ input {
 }
 .pokemon__search--btn {
   cursor: pointer;
+  width: 20%;
 }
+input {
+  width: 40%;
+}
+
 button:hover {
   background-color: rgba(112, 255, 55, 0.384);
 }
