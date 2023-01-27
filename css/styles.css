@@ -35,7 +35,6 @@ button:active {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 80px;
 }
 
 .pokemon__figure {
