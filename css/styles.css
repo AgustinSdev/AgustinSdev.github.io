@@ -6,7 +6,12 @@ body {
   margin: 0;
   background-color: rgba(0, 60, 255, 0.623);
   font-family: "Press Start 2P", cursive;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex-grow: 1;
 }
 *,
 *::after,
@@ -25,7 +30,6 @@ button:active {
 .box-container {
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -251,6 +255,9 @@ button:hover {
 
 .box2 {
   width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* ---------------------> footer */
 .footer {
@@ -307,9 +314,5 @@ button:hover {
     width: 550px;
     height: 100%;
     object-fit: cover;
-  }
-  .footer {
-    position: absolute;
-    bottom: 0;
   }
 }

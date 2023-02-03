@@ -2,7 +2,6 @@ const d = document;
 const $box = d.querySelector(".box");
 const $box2 = d.querySelector(".box2");
 const $footer = d.querySelector(".footer");
-$body = d.querySelector("body");
 let limit = 9;
 let from = 1;
 //pokemon search form
@@ -13,8 +12,6 @@ async function searchPokemon() {
   $box.style.display = "none";
   $box2.classList.remove("notFound");
 
-  $body.style.position = "inherit";
-  $footer.style.position = "relative";
   const value = d.getElementById("pokemon__input").value;
   await fetch(`https://pokeapi.co/api/v2/pokemon/${value.toLowerCase()}`)
     .then((res) => res.json())
@@ -288,9 +285,6 @@ const renderNotFound = () => {
   $box2.appendChild($notFound);
   $box2.classList.add("notFound");
   $box2.style.display = "flex";
-  $body.style.position = "inherit";
-  $footer.style.position = "absolute";
-  $footer.style.bottom = 0;
 };
 
 pokemon(from, limit);
